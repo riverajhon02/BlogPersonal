@@ -1,0 +1,30 @@
+I"�<p>Jekyll es un generador de sitio estático. Le da texto escrito en su lenguaje de marcado favorito y utiliza diseños para crear un sitio web estático. Puede ajustar cómo desea que se vean las URL del sitio, qué datos se muestran en el sitio y más.
+Para la instalación de Jekyll en Ubuntu debes seguir los <strong>siguientes pasos:</strong></p>
+
+<h3 id="instalar-a-full-ruby-development-environment">Instalar a full Ruby development environment.</h3>
+<p>Para comenzar a trabajar con éste generador debemos tener instalado <a href="https://jekyllrb.com/docs/installation/">Ruby</a> en cualquiera de sus versiones</p>
+
+<h3 id="instalar-jekyll-y-su-gema">Instalar Jekyll y su gema</h3>
+<p>Como bien sabemos las gemas son librerias, en este caso instalaremos la gema de Jekyll</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span> <span class="n">bundler</span></code></pre></figure>
+
+<h3 id="creación-de-un-nuevo-proyecto">Creación de un nuevo proyecto</h3>
+<p>Creamos un proyecto para verificar que se halla instalado corectamente, donde <strong>myblog</strong> es el 
+nombre del proyecto a crear.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">jekyll</span> <span class="n">new</span> <span class="n">myblog</span></code></pre></figure>
+
+<h3 id="ingresamos-a-al-poryecto-creado">Ingresamos a al poryecto creado</h3>
+<p>Una vez se cree el proyecto nos debemos transladar a el, para ello utilizamos</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">cd</span> <span class="n">myblog</span></code></pre></figure>
+
+<h3 id="servidor-local">Servidor local</h3>
+<p>Ya construido el sitio lo colocamos a disposición de un servidor local</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+<h3 id="en-su-navegador-favorito-busque-httplocalhost4000">En su navegador favorito busque <a href="http://localhost:4000">http://localhost:4000</a></h3>
+
+:ET
