@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>Instalando Jekyll Ubuntu</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Instalando Jekyll Ubuntu | Blog Personal</title>
+<meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Instalando Jekyll Ubuntu" />
+<meta name="author" content="GitHub User" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jekyll es un generador de sitio estático. Le da texto escrito en su lenguaje de marcado favorito y utiliza diseños para crear un sitio web estático. Puede ajustar cómo desea que se vean las URL del sitio, qué datos se muestran en el sitio y más. Para la instalación de Jekyll en Ubuntu debes seguir los siguientes pasos:" />
+<meta property="og:description" content="Jekyll es un generador de sitio estático. Le da texto escrito en su lenguaje de marcado favorito y utiliza diseños para crear un sitio web estático. Puede ajustar cómo desea que se vean las URL del sitio, qué datos se muestran en el sitio y más. Para la instalación de Jekyll en Ubuntu debes seguir los siguientes pasos:" />
+<link rel="canonical" href="http://localhost:4000/jekyll/update/2020/05/21/welcome-to-jekyll.html" />
+<meta property="og:url" content="http://localhost:4000/jekyll/update/2020/05/21/welcome-to-jekyll.html" />
+<meta property="og:site_name" content="Blog Personal" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-21T23:28:30-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-05-21T23:28:30-05:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2020/05/21/welcome-to-jekyll.html"},"author":{"@type":"Person","name":"GitHub User"},"url":"http://localhost:4000/jekyll/update/2020/05/21/welcome-to-jekyll.html","description":"Jekyll es un generador de sitio estático. Le da texto escrito en su lenguaje de marcado favorito y utiliza diseños para crear un sitio web estático. Puede ajustar cómo desea que se vean las URL del sitio, qué datos se muestran en el sitio y más. Para la instalación de Jekyll en Ubuntu debes seguir los siguientes pasos:","headline":"Instalando Jekyll Ubuntu","dateModified":"2020-05-21T23:28:30-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+</head>
+
+<body>
+  <main class="container">
+    <section class="about">
+      <a href="/"><img src="/assets/jhon.jpg" alt="Jhon Rivera"></a>
+      <h2 id="title">
+        <a href="/">Jhon Rivera</a>
+      </h2>
+      <p class="tagline">Estudiante ADSI</p>
+      <ul class="social"><a href="https://github.com/riverajhon02">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://instagram.com/riverajhonda">
+          <li>
+            <i class="icon-instagram"></i>
+          </li>
+        </a></ul><p>&copy;
+        2020</p><div>
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+      </div>
+      <script type="text/javascript" src="/assets/js/darkmode.js"></script></section>
+    <section class="content">
+      <div class="post-container">
+  <a class="post-link" href="/jekyll/update/2020/05/21/welcome-to-jekyll.html">
+    <h2 class="post-title">Instalando Jekyll Ubuntu</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date"><i class="icon-calendar"></i>May 21, 2020</div><ul class="post-categories"><li>jekyll</li><li>update</li></ul></div>
+  <div class="post">
+    <p>Jekyll es un generador de sitio estático. Le da texto escrito en su lenguaje de marcado favorito y utiliza diseños para crear un sitio web estático. Puede ajustar cómo desea que se vean las URL del sitio, qué datos se muestran en el sitio y más.
+Para la instalación de Jekyll en Ubuntu debes seguir los <strong>siguientes pasos:</strong></p>
+
+<h3 id="instalar-a-full-ruby-development-environment">Instalar a full Ruby development environment.</h3>
+<p>Para comenzar a trabajar con éste generador debemos tener instalado <a href="https://jekyllrb.com/docs/installation/">Ruby</a> en cualquiera de sus versiones</p>
+
+<h3 id="instalar-jekyll-y-su-gema">Instalar Jekyll y su gema</h3>
+<p>Como bien sabemos las gemas son librerias, en este caso instalaremos la gema de Jekyll</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="n">install</span> <span class="n">jekyll</span> <span class="n">bundler</span></code></pre></figure>
+
+<h3 id="creación-de-un-nuevo-proyecto">Creación de un nuevo proyecto</h3>
+<p>Creamos un proyecto para verificar que se halla instalado corectamente, donde <strong>myblog</strong> es el 
+nombre del proyecto a crear.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">jekyll</span> <span class="n">new</span> <span class="n">myblog</span></code></pre></figure>
+
+<h3 id="ingresamos-a-al-poryecto-creado">Ingresamos a al poryecto creado</h3>
+<p>Una vez se cree el proyecto nos debemos transladar a el, para ello utilizamos</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">cd</span> <span class="n">myblog</span></code></pre></figure>
+
+<h3 id="servidor-local">Servidor local</h3>
+<p>Ya construido el sitio lo colocamos a disposición de un servidor local</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">jekyll</span> <span class="n">serve</span></code></pre></figure>
+
+<h3 id="en-su-navegador-favorito-busque-httplocalhost4000">En su navegador favorito busque <a href="http://localhost:4000">http://localhost:4000</a></h3>
+
+
+  </div></div>
+
+    </section>
+  </main>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script>
+    window.onload = function () {
+      var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('searchbar'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<a href="{url}" target="_blank">{title}</a>',
+        noResultsText: ''
+      });
+
+      /* hack ios safari unfocus */
+      if (/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent))
+        document.body.firstElementChild.tabIndex = 1;
+
+      var $labelGroup = document.querySelector(".posts-labelgroup");
+      var $searchbar = document.getElementById("searchbar");
+      var $postLabel = document.getElementById("posts-label");
+      var $searchResults = document.querySelector(".search-results");
+      var labelWidth = $postLabel.scrollWidth;
+      $postLabel.style.width = labelWidth + "px";
+
+      $labelGroup.addEventListener("click", function (e) {
+        $searchResults.style.display = null;
+        $postLabel.style.width = "0";
+        $labelGroup.setAttribute("class", "posts-labelgroup focus-within");
+        $searchbar.focus();
+        e.stopPropagation();
+      }, false);
+
+      $labelGroup.addEventListener("mouseleave", function () {
+        document.body.onclick = searchCollapse;
+      });
+
+      var searchCollapse = function (e) {
+        $searchResults.style.display = "none";
+        $labelGroup.setAttribute("class", "posts-labelgroup");
+        $postLabel.style.width = labelWidth + "px";
+        document.body.onclick = null;
+      };
+    }
+  </script>
+  
+</body>
+
+</html>
