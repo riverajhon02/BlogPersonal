@@ -17,7 +17,7 @@ plainwhite:
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   search: true # set to true to enable searchbar
-  dark_mode: true # set to true to add dark mode toggle
+  
 
   # generate social links in footer
   social_links:
@@ -28,6 +28,10 @@ plainwhite:
     # dribbble: jekyll
     # flickr:   jekyll
     instagram: riverajhonda
+
+    layout: default
+    comments: true
+    discus: "https-riverajhon02-github-io"
     # pinterest: jekyll
     # youtube: jekyll
     # facebook: jekyll
